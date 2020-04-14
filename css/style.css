@@ -106,6 +106,13 @@ body {
   background-color: #fb414e;
 }
 
+.title {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
 a {
   text-decoration: none;
 }
@@ -482,6 +489,10 @@ button {
   padding-top: 26px;
 }
 
+.services {
+  padding-bottom: 30px;
+}
+
 .services__column {
   text-align: center;
   margin-bottom: 50px;
@@ -579,5 +590,113 @@ button {
 
 .services-item__text {
   color: #838383;
+}
+
+.plans {
+  background-color: #202b30;
+}
+
+.plans__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 114px 0;
+}
+
+@media (max-width: 992px) {
+  .plans__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .plans__row {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .plans__row {
+    padding: 30px 0;
+  }
+}
+
+.plans__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.plans-info {
+  margin-right: 20px;
+}
+
+@media (max-width: 992px) {
+  .plans-info {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.plans__title {
+  margin-bottom: 44px;
+}
+
+@media (max-width: 576px) {
+  .plans__title {
+    margin-bottom: 20px;
+  }
+}
+
+.plans__text {
+  max-width: 562px;
+  margin-bottom: 44px;
+}
+
+@media (max-width: 992px) {
+  .plans__text {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.plans__btn {
+  border: 2px solid #fff;
+}
+
+.plans__img:first-child {
+  margin-right: 34px;
+}
+
+@media (max-width: 1200px) {
+  .plans__img {
+    width: 216px;
+  }
+}
+
+@media (max-width: 992px) {
+  .plans__img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .plans__img {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .plans__img:first-child {
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
