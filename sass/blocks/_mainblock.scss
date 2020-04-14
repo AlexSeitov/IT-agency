@@ -1,0 +1,93 @@
+.mainblock {
+    background: url(../img/header-bg.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 150px 0 180px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: 0.5;
+        z-index: 0;
+    }
+
+    @media (max-width: 1200px) {
+        padding: 110px 0 130px;
+    }
+
+    @media (max-width: 576px) {
+        padding: 96px 0 100px;
+    }
+}
+
+.mainblock__wrapper {
+    position: relative;
+    max-width: 1102px;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.mainblock__title {
+    font-family: 'Source Sans Pro';
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 60px;
+
+    @media (max-width: 767px) {
+        font-size: 44px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.mainblock__text {
+    max-width: 652px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    @media (max-width: 767px) {
+        max-width: 400px;
+    }
+
+    @media (max-width: 576px) {
+        margin-bottom: 30px;
+    }
+}
+
+.mainblock__btn {
+    border: 2px solid $red;
+
+    &:hover {
+        background-color: $red;
+    }
+}
+
+.btn--red {
+    background-color: $red;
+    margin-right: 30px;
+
+    &:hover {
+        background-color: $dark-red;
+    }
+
+    @media (max-width: 576px) {
+        margin-right: 0;
+    }
+}
+
+.btn {
+    @media (max-width: 576px) {
+        display: block;
+    margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
