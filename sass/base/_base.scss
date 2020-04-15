@@ -48,6 +48,10 @@ body {
     }
 }
 
+p {
+    color: $darkGray-title;
+}
+
 .title {
     font-family: 'Source Sans Pro';
     font-weight: bold;
@@ -67,4 +71,8 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.column-2 {
+    flex: 1 1 50%;
 }
