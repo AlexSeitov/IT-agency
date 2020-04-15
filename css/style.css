@@ -311,7 +311,7 @@ button {
 }
 
 .mainblock {
-  background: url(../img/header-bg.jpg) center no-repeat;
+  background: url(../img/mainblock/mainblock-bg.jpg) center no-repeat;
   background-size: cover;
   position: relative;
   padding: 150px 0 180px;
@@ -703,6 +703,7 @@ button {
 }
 
 .provide {
+  background-color: #f8f8f8;
   padding: 138px 0 98px;
 }
 
@@ -714,7 +715,7 @@ button {
 
 @media (max-width: 992px) {
   .provide {
-    padding: 60px 0 20px;
+    padding: 60px 0 30px;
   }
 }
 
@@ -792,5 +793,108 @@ button {
   .provide-description__text {
     margin-right: 0;
   }
+}
+
+.works-menu {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.works-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.works-menu__item {
+  font-family: 'Source Sans Pro';
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.works-menu__item:not(:first-child) {
+  margin-left: 60px;
+}
+
+.works-menu__item:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #838383;
+  opacity: 0;
+  -webkit-transition: width .2s ease-in-out;
+  transition: width .2s ease-in-out;
+}
+
+.works-menu__item:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .works-menu__item:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.works-menu__item--active {
+  position: relative;
+}
+
+.works-menu__item--active:after {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: -6px;
+  height: 2px;
+  background-color: #1f1f1f;
+  opacity: 1;
+}
+
+.works-menu__link {
+  text-transform: uppercase;
+  color: #838383;
+}
+
+.works-menu__link--active {
+  font-weight: bold;
+  color: #1f1f1f;
+}
+
+.works-gallery {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.works-gallery_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 25%;
+  padding: 15px;
+}
+
+@media (max-width: 767px) {
+  .works-gallery_item {
+    width: 50%;
+  }
+}
+
+.works-gallery__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
