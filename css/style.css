@@ -1039,4 +1039,76 @@ textarea {
   background-color: #fb414e;
   height: 50px;
 }
+
+.form__btn:hover {
+  background-color: #cf3943;
+}
+
+.footer {
+  background-color: #202b30;
+  padding-bottom: 60px;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__nav {
+  padding: 20px 0 60px;
+}
+
+@media (max-width: 767px) {
+  .footer-contact__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-contact {
+    margin-bottom: 30px;
+  }
+}
+
+.footer-contact__title {
+  font-weight: normal;
+  margin-bottom: 26px;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-subscribe__title {
+  text-align: right;
+}
+
+.footer__form input {
+  max-width: 510px;
+  height: 40px;
+  padding: 18px;
+}
+
+.footer-form__btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  background-color: #fb414e;
+}
+
+.footer-form__btn:hover {
+  background-color: #cf3943;
+}
 /*# sourceMappingURL=style.css.map */

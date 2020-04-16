@@ -1,0 +1,56 @@
+.footer {
+    background-color: $gray-bg;
+    padding-bottom: 60px;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__nav {
+    padding: 20px 0 60px;
+}
+
+.footer-contact__wrapper {
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.footer-contact  {
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
+
+.footer-contact__title {
+    font-weight: normal;
+    margin-bottom: 26px;
+}
+
+.footer__form {
+    display: flex;
+}
+
+.footer-subscribe__title {
+    text-align: right;
+}
+
+.footer__form input {
+    max-width: 510px;
+    height: 40px;
+    padding: 18px;
+}
+
+.footer-form__btn {
+    width: 130px;
+    height: 40px;
+    color: $white;
+    background-color: $red;
+
+    &:hover {
+        background-color: $dark-red;
+    }
+}
