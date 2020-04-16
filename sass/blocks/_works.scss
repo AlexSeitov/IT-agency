@@ -1,6 +1,16 @@
+.works {
+    padding: 60px 0;
+}
+
 .works-menu {
     max-width: 750px;
     margin: 0 auto;
+}
+
+.works__title {
+    color: $darkGray-title;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .works-menu__list {

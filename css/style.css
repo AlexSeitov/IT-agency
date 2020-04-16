@@ -811,9 +811,19 @@ button {
   }
 }
 
+.works {
+  padding: 60px 0;
+}
+
 .works-menu {
   max-width: 750px;
   margin: 0 auto;
+}
+
+.works__title {
+  color: #1f1f1f;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .works-menu__list {
