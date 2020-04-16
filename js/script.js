@@ -1,4 +1,47 @@
-// mobile menu
+// Fixed Header
+
+$(function() {
+    var header = $("#header"),
+        featuresH = $("#features").innerHeight(),
+        scrollOffset = $(window).scrollTop();
+
+    checkScroll(scrollOffset);
+
+    $(window).on("scroll", function() {
+        scrollOffset = $(this).scrollTop();
+
+        checkScroll(scrollOffset);
+    });
+
+
+    function checkScroll(scrollOffset) {
+        if( scrollOffset >= featuresH ) {
+            header.addClass("fixed");
+        } else {
+            header.removeClass("fixed");
+        }
+    }
+});
+
+// Smooth scroll
+
+$("[data-scroll]").on("click", function(event) {
+    event.preventDefault();
+
+    let $this = $(this),
+        blockId = $this.data('scroll'),
+        blockOffset = $(blockId).offset().top;
+
+    $(".nav__link").removeClass("nav__link--active");
+    $this.addClass("nav__link--active");
+
+    $("html, body").animate({
+        scrollTop:  blockOffset
+    }, 500);
+});
+
+
+// Mobile menu
 
 $(".nav-toggle").on("click", function(event) {
     event.preventDefault();
@@ -7,7 +50,7 @@ $(".nav-toggle").on("click", function(event) {
     $(".nav").toggleClass("nav--active");
 });
 
-// isotope
+// Isotope
 
 $('.works-gallery').isotope({
     itemSelector: '.works-gallery_item',
