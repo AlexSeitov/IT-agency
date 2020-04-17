@@ -1,48 +1,48 @@
 @font-face {
   font-family: 'Roboto';
-  src: url("Roboto-Light.woff2") format("woff2"), url("Roboto-Light.woff") format("woff");
+  src: url("../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff");
+  src: url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("Roboto-Medium.woff2") format("woff2"), url("Roboto-Medium.woff") format("woff");
+  src: url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("SourceSansPro-Regular.woff2") format("woff2"), url("SourceSansPro-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("SourceSansPro-SemiBold.woff2") format("woff2"), url("SourceSansPro-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Roboto';
-  src: url("Roboto-Bold.woff2") format("woff2"), url("Roboto-Bold.woff") format("woff");
+  src: url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url("SourceSansPro-Black.woff2") format("woff2"), url("SourceSansPro-Black.woff") format("woff");
+  src: url("../fonts/SourceSansPro/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro/SourceSansPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro/SourceSansPro-SemiBold.woff2") format("woff2"), url("../fonts/SourceSansPro/SourceSansPro-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro/SourceSansPro-Black.woff2") format("woff2"), url("../fonts/SourceSansPro/SourceSansPro-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
@@ -146,7 +146,7 @@ button {
           align-items: center;
   position: absolute;
   width: 100%;
-  height: 100px;
+  height: 80px;
   top: 0;
   left: 0;
   padding: 20px 0;
@@ -519,12 +519,12 @@ button {
 }
 
 .services {
-  padding-bottom: 60px;
+  padding: 60px 0 40px;
 }
 
 .services__column {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .services__subtitle {
@@ -539,7 +539,7 @@ button {
   font-weight: bold;
   font-size: 48px;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .services__title > span {
@@ -549,7 +549,6 @@ button {
 @media (max-width: 576px) {
   .services__title {
     font-size: 30px;
-    margin-bottom: 20px;
   }
 }
 
@@ -563,9 +562,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
@@ -575,13 +574,7 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33.3333%;
           flex: 1 1 33.3333%;
-  padding: 30px 50px;
-}
-
-@media (max-width: 992px) {
-  .services-item {
-    padding: 20px 20px;
-  }
+  padding: 20px 30px;
 }
 
 @media (max-width: 576px) {
@@ -593,27 +586,20 @@ button {
 }
 
 .services-item__img {
-  margin-bottom: 34px;
-}
-
-@media (max-width: 576px) {
-  .services-item__img {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 15px;
 }
 
 .services-item__title {
   font-family: 'Source Sans Pro';
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 34px;
+  margin-bottom: 15px;
   color: #000;
 }
 
 @media (max-width: 576px) {
   .services-item__title {
     font-size: 26px;
-    margin-bottom: 20px;
   }
 }
 
@@ -632,7 +618,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 114px 0;
+  padding: 60px 0;
 }
 
 @media (max-width: 992px) {
@@ -644,12 +630,6 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media (max-width: 992px) {
-  .plans__row {
-    padding: 60px 0;
   }
 }
 
@@ -718,31 +698,20 @@ button {
   }
 }
 
-.provide {
+.about {
   background-color: #f8f8f8;
-  padding: 138px 0 98px;
+  padding: 60px 0 20px;
 }
 
-@media (max-width: 1200px) {
-  .provide {
-    padding: 114px 0 74px;
-  }
-}
-
-@media (max-width: 992px) {
-  .provide {
-    padding: 60px 0 30px;
-  }
-}
-
-.provide__row {
+.about__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 20px;
 }
 
 @media (max-width: 1200px) {
-  .provide__row {
+  .about__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -750,7 +719,7 @@ button {
   }
 }
 
-.provide-objective {
+.about-objective {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -759,7 +728,7 @@ button {
 }
 
 @media (max-width: 1200px) {
-  .provide-objective {
+  .about-objective {
     max-width: 576px;
     margin: 0 auto;
     -webkit-box-ordinal-group: 3;
@@ -768,25 +737,25 @@ button {
   }
 }
 
-.provide__item {
+.about__item {
   max-width: 287px;
   padding: 0 40px 40px 0;
 }
 
 @media (max-width: 1200px) {
-  .provide__item {
+  .about__item {
     padding: 20px;
     margin: 0 auto;
   }
 }
 
-.povide__title {
+.about__title {
   color: #1f1f1f;
   margin-bottom: 22px;
 }
 
 @media (max-width: 1200px) {
-  .provide-description {
+  .about-description {
     max-width: 592px;
     text-align: center;
     margin: 0 auto;
@@ -796,17 +765,17 @@ button {
   }
 }
 
-.provide-description__title {
+.about-description__title {
   color: #1f1f1f;
   margin-bottom: 50px;
 }
 
-.provide-description__text {
+.about-description__text {
   margin: 0 44px 30px 0;
 }
 
 @media (max-width: 1200px) {
-  .provide-description__text {
+  .about-description__text {
     margin-right: 0;
   }
 }
