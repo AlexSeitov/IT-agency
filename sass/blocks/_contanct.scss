@@ -6,7 +6,7 @@
     display: flex;
     
     @media (max-width: 992px) {
-        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
 }
@@ -29,6 +29,10 @@
 .contacts-info__title {
     color: $darkGray-title;
     margin-bottom: 50px;
+
+    @media (max-width: 767px) {
+        font-size: 36px;
+    }
 }
 
 .contacts-info__text {
@@ -36,11 +40,13 @@
 }
 
 .form {
+    width: 50%;
     display: flex;
     flex-direction: column;
     
 
     @media (max-width: 992px) {
+        width: 80%;
         padding: 0 30px;
     }
 

@@ -5,31 +5,37 @@
 
 .about__row {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
 
     @media (max-width: 1200px) {
         flex-direction: column;
+        align-items: center;
     }
 }
 
 .about-objective {
     display: flex;
     flex-wrap: wrap;
+    width: 50%;
 
     @media (max-width: 1200px) {
-        max-width: 576px;
-        margin: 0 auto;
+        width: 80%;
+        justify-content: center;
         order: 2;
     }
 }
 
 .about__item {
     max-width: 287px;
-    padding: 0 40px 40px 0;
+    padding: 40px;
 
     @media (max-width: 1200px) {
         padding: 20px;
-        margin: 0 auto;
+    }
+
+    @media (max-width: 767px) {
+        
     }
 }
 
@@ -39,8 +45,9 @@
 }
 
 .about-description {
+    width: 50%;
     @media (max-width: 1200px) {
-        max-width: 592px;
+        width: 80%;
         text-align: center;
         margin: 0 auto;
         order: 1;
@@ -50,6 +57,10 @@
 .about-description__title {
     color: $darkGray-title;
     margin-bottom: 50px;
+
+    @media (max-width: 767px) {
+        font-size: 36px;
+    }
 }
 
 .about-description__text {

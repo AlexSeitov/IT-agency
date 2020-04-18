@@ -4,27 +4,40 @@
 
 .plans__row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 60px 0;
 
     @media (max-width: 992px) {
-        flex-direction: column;
         align-items: center;
+    }
+
+    @media (max-width: 776px) {
+        text-align: center;
     }
 }
 
 .plans-info {
+    width: 50%;
     margin-right: 20px;
+    margin-bottom: 40px;
 
     @media (max-width: 992px) {
         text-align: center;
-        margin-right: 0;
-        margin-bottom: 40px;
+        margin-right: 0;   
+    }
+
+    @media (max-width: 767px) {
+        width: 80%;
     }
 }
 
 .plans__title {
     margin-bottom: 44px;
+
+    @media (max-width: 767px) {
+        font-size: 36px;
+    }
 
     @media (max-width: 576px) {
         margin-bottom: 20px;
@@ -60,7 +73,6 @@
     }
 
     @media (max-width: 576px) {
-        display: block;
         margin-bottom: 15px;
 
         &:first-child {

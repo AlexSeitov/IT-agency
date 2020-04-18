@@ -11,6 +11,10 @@
     color: $darkGray-title;
     text-align: center;
     margin-bottom: 20px;
+
+    @media (max-width: 767px) {
+        font-size: 36px;
+    }
 }
 
 .works-menu__list {
@@ -64,7 +68,6 @@
         background-color: $darkGray-title;
         opacity: 1;
     }
-
 }
 
 .works-menu__link {
@@ -78,24 +81,23 @@
 }
 
 .works-gallery {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
 }
 
 .works-gallery_item {
-    display: flex;
-    flex-wrap: wrap;
     width: 25%;
     padding: 15px;
 
     @media (max-width: 767px) {
         width: 50%;
     }
-    
 }
 
 .works-gallery__img {
     display: block;
-    max-width: 100%;
+   max-width: 100%;
     height: auto;
 }

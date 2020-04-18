@@ -10,11 +10,16 @@
 .footer__row {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .footer-contact__wrapper {
     @media (max-width: 767px) {
-        flex-direction: column;
+        
     }
 }
 
@@ -39,9 +44,13 @@
 }
 
 .footer__form input {
-    max-width: 510px;
+    width: 280px;
     height: 40px;
-    padding: 18px;
+    padding: 0 18px;
+    
+    @media (max-width: 776px) {
+        width: 100%;
+    }
 }
 
 .footer-form__btn {
@@ -55,14 +64,9 @@
     }
 }
 
-.footer-social {
-    @media (max-width: 767px) {
-        flex-direction: column;
-    }
-}
-
 .footer-social__icons {
     display: flex;
+    justify-content: center;
 
     @media (max-width: 767px) {
         margin-bottom: 20px;

@@ -15,6 +15,10 @@
 .designs-info__title {
     color: $darkGray-title;
     margin-bottom: 50px;
+
+    @media (max-width: 767px) {
+        font-size: 36px;
+    }
 }
 
 .designs__items {

@@ -43,11 +43,11 @@ $(function() {
 
     // Mobile menu
 
-    $(".nav-toggle").on("click", function(event) {
+    $("#nav-toggle").on("click", function(event) {
         event.preventDefault();
 
         $(this).toggleClass("nav-toggle--active");
-        $(".nav").toggleClass("nav--active");
+        $("#nav").toggleClass("nav--active");
     });
 
     // Isotope
